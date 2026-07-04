@@ -1,3 +1,5 @@
+#define ll long long
+
 class LCA {
 private:
     ll n;

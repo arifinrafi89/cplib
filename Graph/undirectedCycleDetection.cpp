@@ -1,3 +1,5 @@
+#define ll long long
+
 vector<ll> cycle;
 
 bool dfs(ll node, vector<vector<ll>> &adj, vector<bool> &visited, vector<bool> &anc, vector<ll> &cycle) {

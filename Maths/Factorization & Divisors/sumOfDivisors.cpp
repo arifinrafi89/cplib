@@ -1,3 +1,6 @@
+#define ll long long
+#define pll pair<ll, ll>
+
 ll binExp(ll a, ll b, ll M) {
     ll res = 1;
     while(b) {

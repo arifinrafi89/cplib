@@ -1,3 +1,5 @@
+#define ll long long
+
 ll binExp(ll a, ll b, ll M) {
     ll res = 1;
     while(b) {

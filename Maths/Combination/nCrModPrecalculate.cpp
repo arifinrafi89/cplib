@@ -1,3 +1,5 @@
+#define ll long long
+
 class Combination {
 private:
     ll n, M;

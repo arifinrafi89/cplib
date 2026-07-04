@@ -1,3 +1,5 @@
+#define ll long long
+
 bool bipartiteCheck(ll n, vector<vector<ll>> &adj, vector<ll> &colour) {
     
     colour.assign(n + 1, 0);

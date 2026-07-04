@@ -1,3 +1,5 @@
+#define ll long long
+
 class DivisorsSieve {
 private:
     vector<vector<ll>> divisors;

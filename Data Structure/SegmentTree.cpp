@@ -1,3 +1,6 @@
+// 0 indexed, no lazy
+#define ll long long
+
 class SegmentTree {
 private:
 	ll n;

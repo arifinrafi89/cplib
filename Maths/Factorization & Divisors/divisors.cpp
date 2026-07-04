@@ -1,3 +1,5 @@
+#define ll long long
+
 vector<ll> calcDivs(ll n) {
     vector<ll> divs;
     for (ll i = 1; i * i <= n; i++) {

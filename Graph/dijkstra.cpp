@@ -1,3 +1,6 @@
+#define ll long long
+#define pll pair<ll, ll>
+
 void dijkstra(ll idx, ll n, vector<vector<pll>> &adj, vector<ll> &d) {
     
     vector<bool> visited(n + 1, false);

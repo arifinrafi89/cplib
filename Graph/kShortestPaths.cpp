@@ -1,9 +1,14 @@
-vll shpa(ll n, ll k, vector<vector<pll>> &adj) {
+// returns a vector of k shortest paths from src to dest
+#define ll long long
+#define pll pair<ll, ll>
+
+
+vector<ll> shpa(ll n, ll src, ll dest, ll k, vector<vector<pll>> &adj) {
  
     priority_queue<pll, vector<pll>, greater<pll>> pq;
     priority_queue<ll> d[n + 1];
-    pq.push({0, 1});
-    d[1].push(0);
+    pq.push({0, src});
+    d[src].push(0);
     while (!pq.empty()) {
         pll node = pq.top();
         pq.pop();
@@ -21,10 +26,10 @@ vll shpa(ll n, ll k, vector<vector<pll>> &adj) {
         }
     }
 
-    vll res;
-    while (!d[n].empty()) {
-            res.push_back(d[n].top());
-            d[n].pop();
+    vector<ll> res;
+    while (!d[dest].empty()) {
+            res.push_back(d[dest].top());
+            d[dest].pop();
         }
         return res;
 }

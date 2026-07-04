@@ -1,3 +1,6 @@
+#define ll long long
+#define pll pair<ll, ll>
+
 class MaxPrefixQuery {
 private:
     vector<vector<ll>> mat;

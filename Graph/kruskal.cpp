@@ -1,3 +1,8 @@
+// weight should be the first element of the edges
+#define ll long long
+#define pll pair<ll, ll>
+
+
 ll find(ll u, vector<ll> &par) {
     if (u == par[u]) return u;
     return par[u] = find(par[u], par);
@@ -20,7 +25,7 @@ void add(ll u, ll v, vector<ll> &par, vector<ll> &size) {
 ll kruskalDsu(ll n, ll m, vector<vector<ll>> &edges) {
 
     vector<ll> size(n + 1, 1), par(n + 1);
-    vpll mst;
+    vector<pll> mst;
     ll cost = 0;
     for (ll i = 1; i <= n; i++) {
         par[i] = i;

@@ -1,3 +1,5 @@
+#define ll long long
+
 bool topoSort(vector<vector<ll>> &adj) {
     ll n = adj.size();
     vector<ll> inDegree(n, 0);

@@ -1,3 +1,5 @@
+#define ll long long
+
 struct TrieNode {
     vector<TrieNode*> next;
     ll prefixCount;

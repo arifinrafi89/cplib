@@ -1,3 +1,5 @@
+#define ll long long
+
 vector<ll> KMP(string &s, string &p) {
     ll n = s.size(), m = p.size();
     vector<ll> LPS(m), res;

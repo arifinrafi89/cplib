@@ -1,3 +1,5 @@
+#define ll long long
+
 class DSU {
 private:
     vector<ll> par;

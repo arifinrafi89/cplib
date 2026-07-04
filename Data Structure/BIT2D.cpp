@@ -1,3 +1,6 @@
+// input vector 0 indexed, tree 1 indexed
+#define ll long long
+
 class  BIT2D {
 private:
     ll n, m;

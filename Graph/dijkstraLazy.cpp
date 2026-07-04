@@ -1,3 +1,7 @@
+#define ll long long
+#define pll pair<ll, ll>
+
+
 void dijkstra(ll start, vector<vector<pll>> &adj, vector<ll> &dist) {
     
     priority_queue<pll, vector<pll>, greater<pll>> pq;

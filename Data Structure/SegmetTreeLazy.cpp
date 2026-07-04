@@ -1,3 +1,6 @@
+// 0 indexed, no lazy
+#define ll long long
+
 class SegmentTreeLazy {
 
 private:

@@ -1,3 +1,7 @@
+#define ll long long
+#define pll pair<ll, ll>
+
+
 ll MST (ll s, vector<vector<ll>> &adj, vector<bool> &visited) {
 
     priority_queue<pll, vector<pll>, greater<pll>> pq;

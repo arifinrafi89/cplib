@@ -1,3 +1,6 @@
+#define ll long long
+#define pll pair<ll, ll>
+
 class SievePrime {
 private:
     vector<bool> prime;

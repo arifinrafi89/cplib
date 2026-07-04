@@ -1,3 +1,5 @@
+#define ll long long
+
 class Derangement {
 private:
     ll n, M;

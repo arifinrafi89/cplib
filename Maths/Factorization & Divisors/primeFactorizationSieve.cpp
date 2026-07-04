@@ -1,3 +1,6 @@
+#define ll long long
+#define pll pair<ll, ll>
+
 class PrimeFactorization {
 private:
     ll n;
