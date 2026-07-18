@@ -1,24 +1,26 @@
 #include <bits/stdc++.h>
 #include <ext/pb_ds/assoc_container.hpp>
 #include <ext/pb_ds/tree_policy.hpp>
- 
+
 using namespace std;
 using namespace __gnu_pbds;
+
+#ifdef LOCAL
+#include "dbg.h"
+#else
+#define dbg(...) {}
+#endif
  
 #define ll long long
 #define pll pair<ll, ll>
-#define yes cout << "YES" << '\n'
-#define no cout << "NO" << '\n'
 #define all(x) x.begin(), x.end()
-#define fast ios_base::sync_with_stdio(false); cin.tie(NULL); cout.tie(NULL)
+#define fast ios_base::sync_with_stdio(false); cin.tie(NULL);
  
 template<typename T>
 using ordered_set = tree<T, null_type, less<T>, rb_tree_tag, tree_order_statistics_node_update>;
  
 const ll inf = LLONG_MAX;
 const ll mod = 1e9 + 7;
-const ll N = 2500;
-
 
 void solve() {
     
