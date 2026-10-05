@@ -1,0 +1,39 @@
+FLOOR DIVISION   (integers, b > 0)
+
+  a * b <= c   <=>   a <= floor(c / b)
+  a * b >  c   <=>   a >  floor(c / b)
+  a * b <  c   <=>   a <= floor((c - 1) / b)
+  a * b >= c   <=>   a >  floor((c - 1) / b)
+
+
+MODULAR INVERSE   (needs gcd(a, m) = 1)
+
+  a * a^-1 ≡ 1 (mod m)
+  m prime:  a^-1 ≡ a^(m - 2) (mod m)
+
+
+EULER'S THEOREM   (needs gcd(a, m) = 1)
+
+  a^phi(m) ≡ 1 (mod m)
+  so  a^e ≡ a^(e mod phi(m)) (mod m)
+  m prime:  phi(m) = m - 1,  so  a^e ≡ a^(e mod (m - 1)) (mod m)
+
+
+CATALAN NUMBERS
+
+  idea:  fix one root / pair / split, leaving a left part of size i
+         and a right part of size n - 1 - i
+
+  C(0) = 1
+  C(n) = sum over i = 0..n-1 of  C(i) * C(n - 1 - i)
+  C(n) = (2n choose n) / (n + 1)
+
+
+BIT TRICKS   (C++ operators: ^ = xor)
+
+  a + b = (a ^ b) + 2 * (a & b)
+  a + b = (a | b) + (a & b)
+  a | b = (a ^ b) + (a & b)
+  a ^ b <= a + b,  equal exactly when a & b = 0
+  x & (x - 1)  clears the lowest set bit
+  x & -x       isolates the lowest set bit
