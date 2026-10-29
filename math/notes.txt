@@ -37,3 +37,5 @@ BIT TRICKS   (C++ operators: ^ = xor)
   a ^ b <= a + b,  equal exactly when a & b = 0
   x & (x - 1)  clears the lowest set bit
   x & -x       isolates the lowest set bit
+
+  a * k mod b reaches every multiple of gcd(a, b) where k = 0, 1, 2, 3 .....
